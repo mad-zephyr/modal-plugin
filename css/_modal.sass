@@ -1,0 +1,55 @@
+.vmodal.open
+	.modal
+		&-window, &-overlay
+			opacity: 1
+			z-index: 1000
+ 
+.vmodal.open
+	.modal 
+		&-window
+			transform: translateY(0px)
+			opacity: 1
+			z-index: 1000
+		&-overlay
+			opacity: 1
+			background: #00000065 
+ 
+.vmodal.hide
+	.modal 
+		&-overlay
+			opacity: 1
+			background: #00000000	
+ 		
+.modal
+	&-window, &-overlay
+		opacity: 0
+		z-index: -1
+
+	&-overlay
+		position: fixed
+		display: flex
+		align-items: center
+		justify-content: center
+		top: 0
+		width: 100%
+		height: 100%
+		background: #00000000 
+		transition: 0.2s all ease-out
+
+	&-window 
+		width: 600px 
+		background: #fff
+		border-radius: 6px
+		transform: translateY(-200%)
+		transition: 0.4s all ease-out
+
+	&-header
+		display: flex
+		justify-content: space-between
+		font-size: 20px
+		font-weight: 500
+	&-close
+		cursor: pointer
+	&-body p
+		margin: 0 0 5px
+	&-footer

@@ -1,0 +1,85 @@
+.vmodal.open .modal-window, .vmodal.open .modal-overlay {
+  opacity: 1;
+  z-index: 1000;
+}
+
+.vmodal.open .modal-window {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+  z-index: 1000;
+}
+
+.vmodal.open .modal-overlay {
+  opacity: 1;
+  background: #00000065;
+}
+
+.vmodal.hide .modal-overlay {
+  opacity: 1;
+  background: #00000000;
+}
+
+.modal-window, .modal-overlay {
+  opacity: 0;
+  z-index: -1;
+}
+
+.modal-overlay {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000000;
+  -webkit-transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
+}
+
+.modal-window {
+  width: 600px;
+  background: #fff;
+  border-radius: 6px;
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+  -webkit-transition: 0.4s all ease-out;
+  transition: 0.4s all ease-out;
+}
+
+.modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.modal-close {
+  cursor: pointer;
+}
+
+.modal-body p {
+  margin: 0 0 5px;
+}
+
+html {
+  margin: 0;
+}
+
+button {
+  border: 0px solid #fff;
+  padding: 3px 20px;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=style.css.map */
